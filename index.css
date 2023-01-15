@@ -1,0 +1,473 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    height: 60px;
+}
+
+.logoSection {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+#navBar a:hover {
+    border: #fff solid 1px;
+}
+
+#logo {
+    width: 100px;
+    overflow: auto;
+}
+
+#logo img {
+    width: 100px;
+}
+
+
+#navBar section a:nth-child(2) {
+    text-decoration: none;
+    color: #fff;
+}
+
+#navBar section a:nth-child(2) span {
+    width: auto;
+}
+
+.formSection {
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+
+}
+
+.formSection form {
+    width: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.formSection form select {
+    width: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    z-index: 1;
+    padding: 6.5px;
+    cursor: pointer;
+}
+
+
+.formSection form input {
+    width: 100%;
+    padding: 5px 80px;
+}
+
+.formSection form input:focus {
+    border: #f99600 4px solid;
+}
+
+.formSection form .iconSearch {
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    background-color: #f99600;
+    padding: 7px;
+    border-radius: 2px;
+}
+
+
+
+.iconSection {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 300px;
+
+}
+
+.iconSection .language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.iconSection .language:hover {
+    border: #fff solid 1px;
+
+}
+
+.iconSection .language img {
+    width: 30px;
+}
+
+.Account {
+    color: #fff;
+    line-height: 1.2rem;
+    padding: 5px 1px;
+}
+
+.Account:hover {
+    border: #fff solid 1px;
+}
+
+.Account h6 {
+    font-size: 11px;
+    margin: 0%;
+}
+
+.Account h5 {
+    font-size: 12px;
+    margin: 0%;
+}
+
+.cartDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.cartDiv:hover {
+    border: #fff solid 1px;
+
+}
+
+@media (max-width:1000px) {
+    .formSection {
+        display: none;
+    }
+
+    .iconSection {
+        display: none;
+    }
+}
+
+
+.navBarTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #232f3e;
+    height: 40px;
+}
+
+.toBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    flex-grow: 1;
+    padding: 5px 0px;
+}
+
+.toBar:hover{
+    border: solid #fff 1px;
+}
+
+.humbrger {
+    position: relative;
+    border-top: 2px solid #fff;
+    width: 20px;
+    margin: 0px 10px;
+}
+
+.humbrger::after,
+.humbrger::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #fff;
+}
+
+.humbrger::before {
+    top: -8px;
+}
+
+#infNavbar {
+    flex-grow: 2;
+}
+
+#infNavbar a {
+    color: #f3f3f4;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#infNavbar a:hover{
+    border: solid #fff 1px;
+
+}
+
+
+#shopNavBar {
+    flex-grow: 1;
+}
+
+#shopNavBar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+#shopNavBar a:hover{
+    border: solid #fff 1px;
+
+}
+
+@media (max-width:1000px) {
+    #infNavbar {
+        display: none;
+    }
+
+    #shopNavBar {
+        display: none;
+    }
+
+    .toBar {
+        justify-content: flex-start;
+    }
+}
+
+
+/* end style nav Bar Two */
+
+
+.menu {
+    left: -285px;
+    height: 100vh;
+    position: fixed;
+    width: 285px;
+    z-index: 3;
+    background-color: #fff;
+    transition: .2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu ul {
+    border-top: 1px solid #f3f3f4;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    cursor: pointer;
+    border-bottom: 1px solid #636366;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li a {
+    color: #131921;
+    text-decoration: none;
+}
+
+.bar {
+    left: 0px;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Start style for show products */
+#showProduct #showImg ul{
+    display: inline-block;
+}
+#showProduct #showImg ul li img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#showProduct  #imgContainer {
+    max-width: 500px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#showProduct  #imgContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+#showProduct  #imgContainer #lens {
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    z-index: 2;
+    position: absolute;
+    cursor: none;
+    background-repeat: no-repeat;
+    display: none;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+}
+
+#showProduct  #imgContainer:hover #lens {
+    display: block;
+}
+
+@media (max-width:500px) {
+    #showProduct #showImg ul{
+        display: flex;
+    }
+}
+
+.visitStore a{
+    color: #0e7c95;
+    padding: 3px;
+    text-align: center;
+}
+
+.visitStore a:hover{
+    color: #f99600;
+    text-decoration: underline;
+}
+
+
+.infStart{
+    display: flex;
+}
+
+.start{
+    position: relative;
+}
+
+.iconStar:hover .infIcon{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.infIcon{
+    position: absolute;
+    width: 300px;
+    top: 30px;
+    left: 0;
+    background-color: #f3f3f4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition:  visibility 0.6s linear, opacity 0.6s linear;
+
+}
+
+.prsint div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.infIcon *{
+    padding: 2px;
+}
+
+.iconStar i {
+    color: #f99600;
+    font-size: 11px;
+}
+.prsint{
+    color: #0e7c95;
+}
+
+.mod
+{
+    position: relative;
+    border-bottom: solid 10px #ccc;
+    width: 180px !important;
+    display: inline-block;
+}
+
+.mod::after{
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: 0;
+    width: 66%;
+    border-bottom: solid 10px #f99600;
+    display: flex;
+    align-items: center;
+
+}
+
+.mod18::after{
+    width: 18%;
+}
+
+
+.mod6::after{
+    width: 6%;
+}
+
+.mod3::after{
+    width: 3%;
+}
+
+.mod7::after{
+    width: 7%;
+}
+
+.prsint div.center{
+justify-content: center;
+}
+
+.prsint div.center a{
+    color: #0e7c95;
+    
+}
+
+.prsint div a i{
+    color: #0e7c95;
+    font-size: 9px;
+    padding-left: 5px;
+}
+/* End style for show products */
