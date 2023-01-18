@@ -1,0 +1,73 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+header{
+    max-width: 100%;
+    width: 100%;
+}
+nav {
+    background-color: #131921;
+}
+
+.SmallScreen ul {
+    list-style: none;
+
+}
+
+header #SmallScreen .infNav {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.infNav ul li a img {
+    width: 50px;
+}
+
+#SmallScreen ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+#SmallScreen ul li a {
+    color: #fff;
+}
+
+#SmallScreen section form {
+    width: 100%;
+    position: relative;
+    padding: 0px 20px;
+}
+
+#SmallScreen section form input {
+    padding: 5px;
+    width: 100%;
+}
+
+#SmallScreen section form i {
+    position: absolute;
+    padding: 7px;
+    background-color: #febd69;
+    border-radius: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.location {
+    background-color: #232f3e;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.location a{
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    #SmallS{
+        display: block;
+    }
+}

@@ -5,282 +5,265 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="smallScreen.css">
+    <link rel="stylesheet" href="./showProducr.css">
 </head>
 
 <body>
-    <!-- navbar with flex -->
     <header>
-        <nav id="navBar">
-            <section class="logoSection">
-                <a href="" id="logo"><img src="./images/download.png" alt=""></a>
-                <a href="">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>
-                        Deliver to
-                        Israel
-                    </span>
-                </a>
+        <nav>
+            <section class="firstSlice">
+                <div class="logoSearchDiv">
+                    <div class="logo">
+                        <a href="#" class="imgLogo">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        <a href="#" class="location">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>
+                                    <h6>Deliver to</h6>
+                                    <h5>Israel</h5>
+                                </span>
+                            </div>
+                        </a>
 
-            </section>
-            <section class="formSection">
-                <form action="">
-                    <select name="" id="">
-                        <option value="">ALL</option>
-                        <option value="">All Departments</option>
-                        <option value="">Arts & Crafts</option>
-                        <option value="">Automotive</option>
-                    </select>
+                    </div>
+                </div>
 
-                    <input type="text">
-                    <span class="iconSearch">
+                <div class="formDiv">
+                    <form action="">
+                        <select name="" id="choese">
+                            <option value="">All Departments</option>
+                            <option value="">Arts & Crafts</option>
+                            <option value="">Automotive</option>
+                        </select>
+                        <input type="text">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
-
-                </form>
-            </section>
-            <section class="iconSection">
-
-                <div class="language">
-                    <img src="./images/1200px-Flag_of_the_United_States.svg.png" alt="">
-                    <h6>EN</h6>
-                    <i class="fa-solid fa-caret-down"></i>
+                    </form>
                 </div>
 
-                <div class="Account">
-                    <h6>Hello, mousab</h6>
-                    <h5>Account & Lists <i class="fa-solid fa-caret-down"></i></h5>
-                </div>
+                <div id="moreIcon">
+                    <div class="languagDiv">
+                        <img src="./images/usa-flag.png" alt="">
+                        <p> EN</p>
+                        <i class="fa-solid fa-sort-down"></i>
+                        <i class="fa-solid fa-caret-up"></i>
+                        <div id="choesesLanguage">
+                            <small>Change language <a href="">Learn more</a></small>
+                            <form action="">
+                                <div class="lun">
+                                    <input type="radio" name="lan" id="" checked>
+                                    <label for="EN">English - EN</label>
+                                </div>
+                                <div>
+                                    <hr>
+                                </div>
 
-                <div class="Account">
-                    <h6>Returns</h6>
-                    <h5>& Orders</h5>
-                </div>
+                                <div class="lun">
+                                    <input type="radio" name="lan" id="">
+                                    <label for="ES">español - ES </label>
+                                </div>
 
-                <div class="cartDiv">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h6>
-                        Cart
-                    </h6>
-                </div>
+                                <div class="lun">
+                                    <input type="radio" name="lan" id="">
+                                    <label for="AR">العربية - AR </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-            </section>
-        </nav>
-    </header>
-
-
-    <header>
-        <nav class="navBarTwo">
-
-            <div class="toBar" id="nav-toggle">
-                <div class="humbrger"></div>
-                <span>All</span>
-            </div>
-            <div id="infNavbar">
-                <a href="">Today's Deals</a>
-                <a href="">Registry</a>
-                <a href="">Buy Again</a>
-                <a href="">Customer Service</a>
-                <a href="">Gift Cards</a>
-                <a href="">Gift Cards</a>
-                <a href="">Sell</a>
-            </div>
-            <div id="shopNavBar">
-                <a href="">Shop deals in Toys</a>
-            </div>
-        </nav>
-    </header>
-    <!-- navbar with flex -->
-
-    <!-- sidbar with scroll bar-->
-    <section id="sideBar">
-        <div class="menu">
-            <!-- Menu -->
-            <ul>
-                <li>
-                    <h6> Digital Content & Devices</h6>
-                </li>
-                <li><a href="#">Amazon Music</a><i class="fa-solid fa-angle-right"></i></li>
-                <li><a href="#">Kindle E-readers & Books</a><i class="fa-solid fa-angle-right"></i></li>
-                <li><a href="#">Amazon Appstore</a><i class="fa-solid fa-angle-right"></i></li>
-                <li><a href="#">Contact</a><i class="fa-solid fa-angle-right"></i></li>
-            </ul>
-        </div>
-    </section>
-    <!-- sidbar with scroll bar-->
-
-    <!-- body with grid -->
-    <main>
-        <section id="showProduct">
-            <div class="container-fluid my-4">
-                <div class="row">
-                    <div class="col-md-2 col-sm-2 col-lg-1">
-                        <div id="showImg">
+                    <div class="account">
+                        <small>Hi</small>
+                        <div>Account&List <i class="fa-solid fa-caret-down"></i></div>
+                        <i class="fa-solid fa-caret-up"></i>
+                        <div class="list">
+                            <div class="inf">
+                                <small>Who's shopping? Select a profile.</small>
+                                <small><a href=""> Manage Profiles <i class="fa-solid fa-caret-right"></i></a></small>
+                            </div>
+                            <hr>
                             <ul>
-                                <li><img onmouseover="hover(0);" class="toSwitch"
-                                        src="./images/71SkyUDX30S._AC_SL1500_.jpg" alt="">
-                                </li>
-                                <li><img onmouseover="hover(1);" class="toSwitch"
-                                        src="./images/61esEczCjNL._AC_SL1500_.jpg" alt="">
-                                </li>
-                                <li><img onmouseover="hover(2);" class="toSwitch"
-                                        src="./images/7139XysX4mL._AC_SL1500_.jpg" alt="">
-                                </li>
-                                <li><img onmouseover="hover(3);" class="toSwitch"
-                                        src="./images/715bBuFQCmS._AC_SL1500_.jpg" alt="">
-                                </li>
-                                <li><img onmouseover="hover(4);" class="toSwitch"
-                                        src="./images/71pvhTrmZDL._AC_SL1500_.jpg" alt="">
-                                </li>
-                                <li><img onmouseover="hover(5);" class="toSwitch"
-                                        src="./images/71RSqGXFTLL._AC_SL1500_.jpg" alt="">
-                                </li>
-                                <li><img onmouseover="hover(6);" class="toSwitch"
-                                        src="images/71USOy-bD-S._AC_SL1500_.jpg" alt="">
-                                </li>
+                                <li> <a href="">home</a> </li>
+                                <li> <a href="">home</a> </li>
+                                <li> <a href="">home</a> </li>
+                                <li> <a href="">home</a> </li>
+                            </ul>
+                            <ul>
+                                <li><a href="">home</a></li>
+                                <li><a href="">home</a></li>
+                                <li><a href="">home</a></li>
+                                <li><a href="">home</a></li>
+                                <li><a href="">home</a></li>
+                                <li><a href="">home</a></li>
+                                <li><a href="">home</a></li>
+                                <li><a href="">home</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-10 col-sm-10 col-lg-5">
-                        <div id="imgContainer">
-                            <img id="imgProduct" src="images/71USOy-bD-S._AC_SL1500_.jpg" alt="">
-                            <div id="lens"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 col-lg-4">
-                        <div id="descriptionProduct">
-                            <div>
-                                <h3>
-                                    Acer Aspire 5 A515-56-32DK Slim Laptop - 15.6" Full HD IPS Display - 11th Gen Intel
-                                    i3-1115G4
-                                    Dual
-                                    Core Processor - 4GB DDR4 - 128GB NVMe SSD - WiFi 6 - Amazon Alexa - Windows 11 Home
-                                    in S mode.
-                                    Visit the Acer Store.
-                                </h3>
-                            </div>
 
-                            <div class="visitStore">
-                                <a href="">Visit the Acer Store</a>
-                            </div>
-
-                            <div class="infStart">
-                                <div class="start">
-                                    <div class="iconStar">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star-half-stroke"></i>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                        <div class="infIcon">
-                                            <div>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke"></i>
-
-                                                <span>4.3 out of 5</span>
-                                                <p>3,806 global ratings</p>
-                                            </div>
-
-                                            <div class="prsint">
-                                                <div>
-                                                    <span>5 star</span>
-                                                    <div class="mod"></div>
-                                                    <span>66%</span>
-                                                </div>
-                                                <div>
-                                                    <span>4 star</span>
-                                                    <div class="mod mod18"></div>
-                                                    <span>18%</span>
-                                                </div>
-                                                
-                                                <div>
-                                                    <span>3 star</span>
-                                                    <div class="mod mod6"></div>
-                                                    <span>6%</span>
-                                                </div>
-
-                                                <div>
-                                                    <span>2 star</span>
-                                                    <div class="mod mod3"></div>
-                                                    <span>3%</span>
-                                                </div>
-
-                                                <div>
-                                                    <span>1 star</span>
-                                                    <div class="mod mod7"></div>
-                                                    <span>7%</span>
-                                                </div>
-                                                <hr>
-                                                <div class="center">
-                                                    <a href="#">See all customer reviews<i class="fa-solid fa-chevron-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="rating"></div>
-                                <div class="ANQ"></div>
-                            </div>
-
-                        </div>
+                    <div class="divLorem">
+                        lorem
                     </div>
 
-                    <div class="col-md-6 col-sm-12 col-lg-2">
-                        <div id="infBuy">
-                            <div>
-                                <input type="radio" name="" id="">
-                            </div>
-                        </div>
+                    <div class="divLorem">
+                        lorem
                     </div>
+                </div>
+            </section>
+            <section class="secondSlice">
+                <div class="leftSide">
+                    <div class="sidBar" onclick="Open()">
+                        <i class="fa-solid fa-bars"></i>
+                        <h6>All</h6>
+                    </div>
+                    <a href="">Today's Deals</a>
+                    <a href="">Registry</a>
+                    <a href="">Buy Again</a>
+                    <a href="">Customer Service</a>
+                    <a href="">Gift Cards</a>
+                    <a href="">Browsing History <i class="fa-solid fa-caret-down"></i></a>
+                    <a href="">Sell</a>
+                </div>
+                <div class="Shop-deals">
+                    <a href="">Shop deals in Toys</a>
+                </div>
+            </section>
+        </nav>
+    </header>
 
+    <header id="SmallS">
+        <nav id="SmallScreen">
+            <section class="infNav">
+                <div>
+                    <ul class="logoUl">
+                        <li onclick="Open()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        <li><a href=""> <img src="./images/logo.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href=""> mousab <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href=""> <i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <form action="">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </section>
+            <section class="location">
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Enviar a Israel
+                </a>
+            </section>
+        </nav>
+    </header>
+
+    <section class="sidBarOpenClose close">
+        <i onclick="Close()" class="fa-solid fa-xmark"></i>
+        <h3>Contenido Y Dispositivos Digitales</h3>
+        <div><a href="">Amazon Music </a><i class="fa-solid fa-caret-right"></i> </div>
+        <div><a href="">E-readers Kindle y Libros</a><i class="fa-solid fa-caret-right"></i></div>
+        <div><a href="">Amazon Appstore</a><i class="fa-solid fa-caret-right"></i></div>
+    </section>
+    <main>
+        <section class="showProduct">
+            <div class="product">
+                <div class="imgProduct">
+                    <ul>
+                        <li><img onmousemove="changeImg(this)" src="./images/61MeO2PDXaL._AC_SL1500_.jpg" alt=""></li>
+                        <li><img onmousemove="changeImg(this)" src="./images/61pvy87V4KL._AC_SL1500_.jpg" alt=""></li>
+                        <li><img onmousemove="changeImg(this)" src="./images/710eG77i7sL._AC_SL1500_.jpg" alt=""></li>
+                        <li><img onmousemove="changeImg(this)" src="./images/71APoCasH0L._AC_SL1500_.jpg" alt=""></li>
+                        <li><img onmousemove="changeImg(this)" src="./images/71Gpjc6eycL._AC_SL1500_.jpg" alt=""></li>
+                        <li><img onmousemove="changeImg(this)" src="./images/71GspQmHDML._AC_SL1500_.jpg" alt=""></li>
+                    </ul>
+                    <div class="imgContainer">
+                        <div>
+                            <img id="mainImg" onmouseover="Zooming(this)" src="./images/61MeO2PDXaL._AC_SL1500_.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="descriptionProduct">
+                    <h5>
+                        Valkit Funda compatible con Airpods Pro con clip de bloqueo, textura de fibra de carbono con
+                        llavero para hombres y mujeres, funda protectora a prueba de golpes para AirPods Pro 2019, color
+                        negro
+                    </h5>
+                    <a href="">Visita la tienda de valkit</a>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="" class="block">898 calificaciones </a>
+                        <a href="">3 preguntas respondidas</a>
+                    </div>
+                    <div>
+                        <sup>us$</sup>9<sup>98</sup>
+                        <p>Sin depósito de derechos de importación y US$10.66 de envío a Israel <a href="" class="Detalles">Detalles <i class="fa-solid fa-angle-down"></i></a></p>
+                    </div>
+                    <div class="moreImg">
+                        <img onmousemove="changeImg(this)" src="./images/611PnCoV81L._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/61b3UFYT7HL._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/61DYnWvRpbL._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/61iEkt9sOyL._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/61jyF8osxYL._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/61PVk7wwh2L._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/61HTT5-EDbL._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/61pvy87V4KL._AC_SL1500_.jpg" alt="">
+
+                        <img onmousemove="changeImg(this)" src="./images/61SwgD4LaML._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/71JEdTCdr0L._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/71k38JIk9WS._AC_SL1500_.jpg" alt="">
+                        <img onmousemove="changeImg(this)" src="./images/611DFsx-WVL._AC_SL1500_.jpg" alt="">
+                    </div>
                 </div>
             </div>
 
+            <div class="orderProduct">
 
-
-
-
+            </div>
         </section>
     </main>
-    <!-- body with grid -->
-
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
+
 <script>
-    $('#nav-toggle').click(function (e) {
-        e.stopPropagation();
-        $(".menu").toggleClass('bar')
-    });
-    $('body').click(function (e) {
-        if ($('.menu').hasClass('bar')) {
-            $(".menu").toggleClass('bar')
-        }
-    })
+    function Close() {
+        let sec = document.getElementsByClassName('sidBarOpenClose').item(0);
+        sec.classList.remove('open');
+        sec.classList.add('close');
+    }
+
+    function Open() {
+        let sec = document.getElementsByClassName('sidBarOpenClose').item(0);
+        sec.classList.remove('close');
+        sec.classList.add('open');
+    }
+
+    function changeImg(par) {
+        let mainImg = document.getElementById("mainImg");
+
+        let temp = mainImg;
+        mainImg.src = par.src;
+        par.src = temp.src;
+    }
+
+
 </script>
-<script src="/index.js"></script>
 
 </html>
