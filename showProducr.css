@@ -3,12 +3,15 @@
     width: 90%;
     margin: 0px auto;
     grid-template-columns: 4fr 1fr;
+    position: relative;
+    height: fit-content;
+    padding: 10px;
 }
 
 .product {
     /* background-color: red; */
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     /* align-items: center; */
 }
@@ -18,7 +21,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 8fr;
-    padding: 10px;
+    /* padding: 10px; */
     height: fit-content;
     position: sticky;
     top: 0;
@@ -58,6 +61,7 @@
     width: 100%;
     height: fit-content;
     padding: 10px;
+    margin: 50px 0px;
 }
 
 .descriptionProduct a {
@@ -149,9 +153,59 @@
 }
 
 .orderProduct {
-    background-color: black;
+    border: solid #6e738c 1px;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px 0px;
+    line-height: 1.5rem;
+}
+
+.orderProduct a {
+    color: #137592;
+}
+
+.orderProduct a:hover {
+    color: #ffa41c;
+    text-decoration: underline;
+}
+
+.orderProduct div {
+    width: 100%;
+}
+
+.orderProduct div select {
+    border-radius: 5px;
+    background-color: #DDD;
+    border: none;
+    padding: 5px;
+}
+
+.btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btnDiv button {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.lockDiv {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.lockDiv a {
+    padding: 0px 5px;
 }
 
 @media (max-width:768px) {
@@ -163,9 +217,19 @@
     .imgProduct {
         position: static;
     }
+
+    .moreDet .MorePoducts .price p {
+        font-size: 3vw !important;
+    }
+    .cardDiv{
+        flex-wrap: wrap;
+    }
+    .productLike div .card p{
+        font-size: 3vw !important;
+    }
 }
 
-@media (max-width:500px) {
+@media (max-width:667px) {
     .product {
         display: block;
         height: fit-content;
@@ -213,6 +277,26 @@
         font-size: 2vw;
 
     }
+
+    .showProduct::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100% !important;
+        border-bottom: solid 5px #6e738c;
+    }
+
+    .productosSimilares {
+        align-items: flex-start !important;
+    }
+
+    .productosSimilaresDiv {
+        width: auto;
+        justify-content: flex-start !important;
+    }
+
+
 }
 
 .twoUl {
@@ -236,10 +320,193 @@
     width: 100%;
     left: 0;
 }
-.fullDes{
+
+.fullDes {
     margin: 10px auto;
     width: 100%;
 }
-.fullDes ul{
+
+.fullDes ul {
     padding: 15px;
+}
+
+.ulDiv {
+    margin: 10px 0px;
+}
+
+.ulDiv ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.ulDiv ul li {
+    color: #6e738c;
+    padding: 10px;
+    font-size: 100%;
+}
+
+.formDiv {
+    margin: 10px 0px;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.formDiv::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: solid 1px #6e738c;
+    width: 100%;
+}
+
+.lastBtn button {
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px;
+    border: solid 1px #6e738c;
+}
+
+.lastBtn button:hover {
+    box-shadow: rgba(3, 87, 255, 0.35) 0px 0px 15px;
+
+}
+
+.showProduct::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 57.4%;
+    border-bottom: solid 1px #6e738c;
+}
+
+.productosSimilares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    margin: 20px;
+}
+
+.productosSimilaresDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.productosSimilaresDiv a {
+    width: 50%;
+}
+
+.productosSimilares::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #6e738c;
+
+}
+
+
+.moreDet {
+    margin: 10px;
+    position: relative;
+    padding: 20px;
+}
+
+.moreDet .MorePoducts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.moreDet .MorePoducts img {
+    width: 10%;
+    margin: 10px 0px;
+}
+
+.moreDet .MorePoducts img.blackAirpord {
+    margin: 0px 0px;
+}
+
+.moreDet .MorePoducts p {
+    padding: 10px;
+    font-size: 7vw;
+}
+
+.moreDet .MorePoducts .price p {
+    font-size: 1vw;
+}
+
+.moreDet .MorePoducts .price button {
+    padding: 5px;
+    border: solid 1px #6e738c;
+    border-radius: 15px;
+    background-color: #ffd814;
+}
+
+.moreDet div h6 {
+    padding: 5px 0px;
+}
+
+
+.moreDet div h6 a {
+    color: #137592;
+}
+
+.moreDet div h6 a:hover {
+    color: #ffa41c;
+    text-decoration: underline;
+}
+
+.moreDet::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #6e738c;
+}
+
+.productLike {
+    margin: 10px;
+}
+
+.productLike div.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productLike .cardDiv .card {
+    margin: 10px;
+}
+
+.productLike div .card img {
+    width: 100%;
+
+}
+
+.productLike div .card p {
+    height: fit-content;
+    font-size: 1vw;
+}
+
+.productLike div .card p a {
+    color: #137592;
+}
+
+.productLike div .card p a:hover{
+    color: #ffa41c;
+    text-decoration: underline;
 }
